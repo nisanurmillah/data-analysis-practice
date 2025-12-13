@@ -1,5 +1,6 @@
 # data-analysis-sql-practice
 Kumpulan SQL Query untuk latihan Analisis Data menggunakan skema database e-commerce standar (mirip Northwind/Supabase)
 ##Skema Database 
-![Skema Database Latihan Analisis] (supabase-schema-gnnmwhhzixvqjqwtkrlj (1).png)
-<img width="1053" height="541" alt="supabase-schema-gnnmwhhzixvqjqwtkrlj (1)" src="https://github.com/user-attachments/assets/661b7678-5926-4822-be16-a262a36e1220" />
+![Skema Database Latihan Analisis] (database-examples-schema-northwind.png)
+<img width="1053" height="541" alt="database-examples-schema-northwind" src="https://github.com/user-attachments/assets/e0d21d4e-6a61-45b7-b1aa-76545ac18bb0" />
+
