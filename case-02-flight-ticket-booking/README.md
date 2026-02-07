@@ -89,7 +89,7 @@ memberikan kontribusi pendapatan lebih tinggi.
 ### Popular Route
 Rute dengan jumlah penumpang terbanyak adalah:
 
-✈️ **Kuala Lumpur → Surabaya**
+**Kuala Lumpur → Surabaya**
 
 Rute ini berpotensi untuk:
 - penambahan frekuensi penerbangan  
