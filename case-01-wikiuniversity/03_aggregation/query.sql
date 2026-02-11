@@ -30,7 +30,7 @@ WHERE c.customer_id='20'
 GROUP BY c.customer_id, c.customer_name, p.product_name, d.quantity, p.price
 ORDER BY total_bayar DESC;
 
--- Tampilkan produk dengan penjualan teringgi beserta customer yang membelinya
+--Tampilkan produk dengan penjualan teringgi beserta customer yang membelinya
 SELECT 
   p.product_id,
   p.product_name,
@@ -133,6 +133,38 @@ JOIN orderdetails od ON od.order_id=o.order_id
 JOIN products p ON p.product_id=od.product_id
 GROUP BY c.customer_id, c.customer_name HAVING COUNT(DISTINCT p.category_id)>3
 ORDER BY COUNT(DISTINCT p.category_id)DESC;
+
+--Tampilkan nama supplier (SupplierName) yang memasok produk-produk yang totalnya terjual lebih dari 200 unit ke pelanggan di kota 'London'.
+SELECT s.supplier_name 
+FROM suppliers s 
+JOIN products p ON p.supplier_id=s.supplier_id 
+JOIN order_details od ON p.product_id=od.product_id
+JOIN orders o ON o.order_id=od.order_id
+JOIN customers c ON c.customer_id=o.customer_id
+WHERE c.city='London' GROUP by s.supplier_name HAVING SUM(od.quantity)>100;
+
+--Tampilkan nama kategori yang memiliki jenis produk lebih dari 5
+SELECT c.category_name, COUNT(p.product_id) AS jumlah_produk
+FROM categories c
+JOIN products p ON c.category_id = p.category_id
+GROUP BY c.category_name
+HAVING COUNT(p.product_id) > 5;
+
+--Tampilkan nama kategori yang memiliki jenis produk lebih dari 6
+SELECT* FROM (
+SELECT c.category_name, COUNT(p.product_id) AS jumlah_produk 
+FROM categories c 
+JOIN products p ON c.category_id = p.category_id
+GROUP BY c.category_name) dt
+WHERE dt.jumlah_produk >6;
+
+--Tampilkan nama produk dengan kategori seafood
+SELECT p.product_name,c.category_name 
+FROM products p 
+JOIN categories c ON p.category_id = c.category_id 
+WHERE c.category_name ='Seafood';
+
+
 
 
 
