@@ -160,11 +160,12 @@ Case-01-Northwind/
 
 ---
 
-## 🛠 Tools Used
+## Tools Used
 
 - PostgreSQL / SQL
 - Supabase (Database Environment)
 - GitHub (Version Control)
+- Looker studio 
 
 ---
 
