@@ -1,6 +1,6 @@
-# SQL Data Analysis Practice Portfolio
+# Data Analysis Practice Portfolio
 
-Repository ini berisi kumpulan studi kasus SQL yang mensimulasikan permasalahan bisnis di berbagai industri.
+Repository ini berisi kumpulan studi kasus yang mensimulasikan permasalahan bisnis di berbagai industri.
 
 Tujuan project ini adalah untuk melatih kemampuan analisis data, eksplorasi dataset, serta menerjemahkan pertanyaan bisnis menjadi query SQL yang actionable.
 
@@ -10,7 +10,9 @@ Tujuan project ini adalah untuk melatih kemampuan analisis data, eksplorasi data
 
 * PostgreSQL / Supabase
 * SQL
-* Spreadsheet (untuk validasi)
+* Spreadsheet
+* Looker studio
+* Python
 
 ---
 
