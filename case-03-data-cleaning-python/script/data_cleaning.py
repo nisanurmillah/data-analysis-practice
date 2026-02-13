@@ -88,10 +88,15 @@ df["phone"]= df["phone"].astype(str)
 missing_report(df, "setelh diberi keterangan")
 print(df["phone"].head(10))
 
-kolom_number=["CQL Score","githubFollowers","twitterFollowers", "latitude", "longitude"]
-df[kolom_number] = df[kolom_number].replace(na_like, pd.NA)
-df[kolom_number] = df[kolom_number].fillna("data tidak tersedia")
-missing_report(df, "setelah diberi keterangan")
+kolom_number = ["CQL Score", "githubFollowers", "twitterFollowers", "latitude", "longitude"]
+
+for col in kolom_number:
+    if col in df.columns:
+        # Ganti NA-like jadi NaN
+        df[col] = df[col].replace(na_like, np.nan)
+        
+        # Paksa jadi numeric, kalau gagal → jadi NaN
+        df[col] = pd.to_numeric(df[col], errors="coerce")
 
 
 print(df["email"])
