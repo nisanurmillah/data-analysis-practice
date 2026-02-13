@@ -70,16 +70,16 @@ Ini menunjukkan tingkat ketergantungan yang cukup tinggi terhadap pelanggan utam
 
 ### 2. Spending Pattern of Top Customer
 
-Dari peta hierarki pembelian Ernst Handel terlihat urutan produk dari nilai belanja terbesar hingga terkecil.
+Produk-produk pada treemap merupakan **daftar pembelian milik pelanggan dengan nilai transaksi tertinggi** yaitu Ernst Handel, bukan representasi produk terlaris perusahaan secara keseluruhan.
 
 ![Treemap Ernst Handel](images/ernst_handel_treemap.png)
 
-Produk dengan pengeluaran terbesar adalah:
+Dari treemap tersebut terlihat bahwa Ernst Handel mengeluarkan belanja terbesar pada produk:
 
 **Côte de Blaye**
 
 Produk ini dapat dijadikan:
-- Anchor product untuk promosi premium  
+- menjaga ketersediaan stok produk favorit  
 - Target bundling  
 - Referensi rekomendasi produk sejenis dengan harga lebih tinggi
 
@@ -165,8 +165,13 @@ Untuk kota seperti Graz:
 ## Conclusion
 Analisis menunjukkan bahwa:
 
-- Revenue perusahaan sangat dipengaruhi oleh segelintir pelanggan utama.
-- Produk premium memberi dampak signifikan terhadap pendapatan.
-- Peluang pertumbuhan terbesar ada pada optimalisasi nilai belanja, bukan hanya penambahan jumlah pelanggan.
+Analisis menunjukkan bahwa:
+
+- Revenue perusahaan sangat dipengaruhi oleh segelintir pelanggan bernilai tinggi.
+- Preferensi pembelian pelanggan VIP dapat digunakan sebagai dasar strategi personalisasi, seperti menjaga ketersediaan stok dan menawarkan produk serupa.
+- Pelanggan yang membeli dari banyak kategori/supplier menunjukkan potensi loyalitas dan lifetime value yang besar.
+- Kota dengan jumlah pelanggan tinggi tidak selalu menghasilkan pendapatan terbesar.
+- Peluang pertumbuhan terbesar berasal dari peningkatan nilai belanja pelanggan yang sudah ada, bukan hanya dari menambah jumlah pelanggan baru.
+
 
 Dengan strategi retensi VIP, upselling, dan segmentasi pasar berbasis kota, perusahaan dapat meningkatkan profit secara lebih terarah dan efisien.
