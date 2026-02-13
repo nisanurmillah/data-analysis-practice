@@ -4,8 +4,8 @@ import pandas as pd
 import numpy as np
 import re
 
-file_in="data_users_kemasaja_2024.csv"
-file_out="data_users_kemasaja_2024_celan.csv"
+file_in="data_users_dumy_2024.csv"
+file_out="data_users_dumy_2024_celan.csv"
 
 def missing_report(df, judul="Ringkasan NA per kolom"):
     print("n"+"="*30,judul,"="*30+"\n")
