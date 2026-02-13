@@ -70,7 +70,7 @@ Ini menunjukkan tingkat ketergantungan yang cukup tinggi terhadap pelanggan utam
 
 ### 2. Spending Pattern of Top Customer
 
-Produk-produk pada treemap merupakan **daftar pembelian milik pelanggan dengan nilai transaksi tertinggi** yaitu Ernst Handel, bukan representasi produk terlaris perusahaan secara keseluruhan.
+Produk-produk pada treemap merupakan daftar pembelian milik pelanggan dengan nilai transaksi tertinggi yaitu Ernst Handel, bukan representasi produk terlaris perusahaan secara keseluruhan.
 
 ![Treemap Ernst Handel](images/ernst_handel_treemap.png)
 
