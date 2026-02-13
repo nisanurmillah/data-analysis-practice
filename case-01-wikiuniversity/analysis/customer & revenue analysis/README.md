@@ -122,7 +122,7 @@ Perlu strategi berbeda antara akuisisi dan monetisasi.
 ## Key Insights
 
 - Satu pelanggan dapat menyumbang hampir 10% pendapatan perusahaan.
-- Produk premium memainkan peran penting dalam pembentukan revenue.
+- Produk dengan nilai pembelian tinggi bagi pelanggan VIP mencerminkan preferensi penting yang dapat dimanfaatkan untuk personalisasi penawaran.
 - Customer multi-kategori adalah indikator loyalitas kuat.
 - Beberapa kota memiliki ARPU (Average Revenue per User) tinggi walau jumlah customer rendah.
 
