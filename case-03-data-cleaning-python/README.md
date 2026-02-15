@@ -63,11 +63,20 @@ Tipe data disesuaikan dengan struktur:
 Dashboard menjawab pertanyaan berikut:
 
 - Total pengguna hingga 2024  
-- Grafi pertumbuhan pengguna per tahun  
+- Grafik pertumbuhan pengguna per tahun  
 - Demografi pengguna per negara  
 - Demografi pengguna berdasarkan kota di Indonesia 
 - Pengguna berdasarkan jenis kelamin  
-- Top 10 halaman yang paling sering diakses  
+- Total Conversation
+- Top Starter Pages
+- Top Categories by Conversation
+- % Share Conversation per Category
+- Original vs Recent Category Comparison
+- Conversation Change vs Stay
+- Conversation Flow (From Page → To Page)
+- Conversation Rate per Page
+- % Repeat Conversation (User Retention)
+- Conversation per Bulan / per Jam 
 - Jumlah pengguna 2022–2023  
 - Jumlah customer dengan email yang sama   
 
@@ -105,5 +114,6 @@ Raw Data
 → Query & Aggregation  
 → Dashboard (Looker Studio)  
 → Insight  
+
 
 
