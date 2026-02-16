@@ -1,4 +1,4 @@
-# 🗃 SQL Queries – Product Performance Analysis
+# SQL Queries – Product Performance Analysis
 
 Folder ini berisi kumpulan query SQL yang digunakan untuk menganalisis performa produk pada dataset Northwind.
 
