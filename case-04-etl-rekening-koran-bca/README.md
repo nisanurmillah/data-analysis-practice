@@ -112,7 +112,7 @@ Dari dashboard, user harus bisa mengetahui:
 ## Link Project
 
 **Dashboard Looker Studio:**  
-`[ https://lookerstudio.google.com/reporting/e70d8a4a-77c8-4c9c-add9-de6606f4db4c ]`
+https://lookerstudio.google.com/reporting/e70d8a4a-77c8-4c9c-add9-de6606f4db4c
 
 ---
 
