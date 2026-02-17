@@ -1,4 +1,4 @@
-# Case 01 – WikiUniversity Dataset
+# Case 02 – WikiUniversity Dataset
 
 ## Sales Performance Analysis using Northwind Dataset
 
