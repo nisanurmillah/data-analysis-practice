@@ -83,7 +83,9 @@ Implikasi strategis:
 ## 3. Top 10 Products by Sales Volume
 
 Visualisasi: Diagram Top 10 Produk Berdasarkan Quantity
+
 ![Top Products](dashboard_images/03_dashboard.png)
+
 
 Berikut adalah 10 produk dengan total quantity terjual tertinggi:
 
@@ -125,7 +127,9 @@ Keseimbangan antara kedua tipe produk ini penting untuk menjaga stabilitas reven
 ## 4. Monthly Revenue & Growth Analysis
 
 Visualisasi: Total Revenue dan Growth Percentage per Bulan
+
 ![Monthly Growth](dashboard_images/04_dashboard.png)
+
 
 ### Insight:
 
