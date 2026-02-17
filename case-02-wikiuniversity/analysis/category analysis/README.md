@@ -16,7 +16,6 @@ Data dianalisis menggunakan agregasi dan visualisasi untuk mendapatkan insight b
 Hasil analisis ini juga tersedia dalam bentuk dashboard interaktif yang dapat diakses melalui link berikut:
 
 🔗 **Dashboard Looker Studio:**  
-[Klik di sini untuk melihat dashboard]
 
 https://lookerstudio.google.com/reporting/28e80093-6e43-4611-b0b5-6bba6b5b301a 
 
