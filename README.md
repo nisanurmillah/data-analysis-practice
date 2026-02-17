@@ -2,7 +2,28 @@
 
 Repository ini berisi kumpulan studi kasus yang mensimulasikan permasalahan bisnis di berbagai industri.
 
-Tujuan project ini adalah untuk melatih kemampuan analisis data, eksplorasi dataset, serta menerjemahkan pertanyaan bisnis menjadi query SQL yang actionable.
+Tujuan project ini adalah untuk melatih kemampuan end-to-end data analysis, mulai dari:
+
+- Data cleaning & transformation
+- SQL analysis
+- Business insight generation
+- Dashboard visualization
+- ETL scripting
+
+---
+
+## Repository Structure
+
+Di dalam repository ini terdapat 4 case study utama:
+
+data-analysis-practice/
+│
+├── case-01-user-behavior-dashboard/
+├── case-02-wikiuniversity/
+├── case-03-flight-ticket-booking/
+├── case-04-etl-rekening-koran-bca/
+
+Detail lengkap masing-masing studi kasus dapat dilihat di folder terkait.
 
 ---
 
@@ -10,7 +31,7 @@ Tujuan project ini adalah untuk melatih kemampuan analisis data, eksplorasi data
 
 * PostgreSQL / Supabase
 * SQL
-* Spreadsheet
+* Google Spreadsheet
 * Looker studio
 * Python
 
@@ -18,28 +39,93 @@ Tujuan project ini adalah untuk melatih kemampuan analisis data, eksplorasi data
 
 ## Case Studies
 
-### Flight Ticket Booking Analysis
+### Case 01 — User Behavior Dashboard  
+`case-01-user-behavior-dashboard/`
+
+End-to-end user behavior analysis project mulai dari data cleaning (Python), analisis SQL, hingga visualisasi dashboard.
+
+Fokus analisis:
+- User growth & demographic analysis
+- Conversation & engagement metrics
+- Content performance & retention analysis
+- Conversation flow & behavior tracking
+
+Dashboard menjawab pertanyaan terkait:
+- Pertumbuhan pengguna
+- Retention & repeat conversation
+- Top pages & categories
+- Conversation rate & flow analysis
+
+Detail lengkap tersedia di dalam folder case.
+
+### Case 02 — WikiUniversity / Northwind Trading Analysis  
+`case-02-wikiuniversity/`
+
+Simulasi analisis perusahaan distribusi untuk mengevaluasi:
+
+- Performa penjualan
+- Produk terlaris
+- Kontribusi customer
+- Kontribusi supplier
+- Distribusi geografis revenue
+
+Teknik yang digunakan:
+- Complex JOIN
+- CTE
+- Aggregation
+- Ranking & filtering
+- Contribution percentage analysis
+
+Detail: `case-02-flight-ticket-booking/`
+
+### Case 03 — Flight Ticket Booking Analysis  
+`case-03-flight-ticket-booking/`
 
 Analisis performa maskapai, popularitas rute, revenue, customer behavior, dan load factor.
 
 Beberapa business question:
 
-* Maskapai dengan pendapatan terbesar
-* Rute paling populer
-* Top spender customer
-* Repeat customer rate
-* Tren penjualan harian
-* Rata-rata harga tiket per rute
+- Maskapai dengan pendapatan terbesar
+- Rute paling populer
+- Top spender customer
+- Repeat customer rate
+- Tren penjualan harian
+- Rata-rata harga tiket per rute
+- Load factor analysis
 
-Detail: `case-02-flight-ticket-booking/`
+Project ini menekankan pada revenue analysis dan customer behavior.
 
 ---
 
-### Northwind Trading Analysis
+### Case 04 — ETL Rekening Koran BCA  
+`case-04-etl-rekening-koran-bca/`
 
-Simulasi analisis perusahaan distribusi untuk melihat performa penjualan, produk terlaris, dan kontribusi customer.
+Project ini berfokus pada proses ETL (Extract, Transform, Load).
 
-Detail: `case-01-wikiuniversity/`
+Alur kerja:
+
+
+1. Extract  
+   - Mengambil data dari rekening koran BCA dalam format PDF
+
+2. Transform  
+   - Menggunakan Python script untuk mengubah PDF menjadi format CSV
+   - Data cleaning & formatting
+
+3. Validation  
+   - Validasi dan pengecekan data di Google Spreadsheet
+
+4. Visualization  
+   - Visualisasi dashboard menggunakan Looker Studio
+
+Dashboard menampilkan:
+- Total pengeluaran & total pemasukan
+- Grafik histori transaksi harian
+- Persentase pemasukan vs pengeluaran
+- Tabel transaksi masuk & keluar
+- Fitur pencarian dan filter tanggal
+
+Project ini menunjukkan kemampuan data extraction, transformation scripting, validasi data, dan dashboard financial reporting.
 
 ---
 
@@ -49,11 +135,25 @@ Detail: `case-01-wikiuniversity/`
 
 ## Skills Demonstrated
 
-* Data cleaning & transformation
-* Aggregation & grouping
-* Complex JOIN
-* Subquery & CTE
-* Business insight generation
+- Data Cleaning & Transformation
+- SQL Query Optimization
+- Aggregation & Grouping
+- Complex JOIN & CTE
+- ETL Scripting
+- Dashboard Design
+- Business Insight Generation
+- End-to-End Data Workflow
+
+---
+
+## 📈 Project Objective
+
+Repository ini dibuat sebagai latihan sekaligus portfolio untuk menunjukkan kemampuan:
+
+- Menerjemahkan business question menjadi query SQL
+- Mengolah data mentah menjadi insight yang actionable
+- Membangun dashboard yang komunikatif
+- Mengelola project analisis secara terstruktur
 
 ---
 

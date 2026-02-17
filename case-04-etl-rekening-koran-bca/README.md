@@ -69,13 +69,6 @@ Sebelum digunakan di dashboard, data CSV diupload ke **Google Sheets** untuk mem
 - Format tanggal sudah benar  
 - Nama counterparty terbaca dengan tepat  
 
-Beberapa pengecekan yang dilakukan:
-
-- SUM kolom pemasukan  
-- SUM kolom pengeluaran  
-- Filter transaksi tertentu (misalnya ke ERLINA)  
-- Pencocokan saldo akhir  
-
 Tahap ini penting agar hasil analisa di dashboard dapat dipercaya.
 
 ---

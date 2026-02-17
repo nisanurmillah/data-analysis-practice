@@ -44,25 +44,29 @@ Proyek ini mencakup eksplorasi dan analisis dataset Northwind dari berbagai aspe
 ---
 
 ### 2. Product Analysis
-**Tujuan:** Memahami performa produk dan profitabilitas.  
+**Tujuan:** Memahami performa produk, kontribusi revenue, dan profitabilitas.
 
 | No | Business Question | Fokus Analisis |
 |----|-----------------|----------------|
-| 1  | Produk apa yang paling banyak terjual? | Menentukan top selling product. |
-| 2  | Produk mana yang memiliki kontribusi penjualan terbesar? | Fokus stok & promosi produk unggulan. |
-| 3  | Produk berdasarkan kategori atau supplier tertentu? | Strategi kategori & sourcing. |
+| 1  | Produk apa yang paling banyak terjual? | Menentukan top selling product berdasarkan volume. |
+| 2  | Produk mana yang memiliki kontribusi penjualan terbesar? | Mengidentifikasi produk dengan kontribusi revenue terbesar. |
+| 3  | Bagaimana distribusi revenue antar produk? | Menganalisis persebaran revenue dan konsentrasi penjualan. |
 | 4  | Produk mana yang memiliki potensi keuntungan maksimal? | Pricing strategy dan margin planning. |
+| 5  | Berapa kontribusi kumulatif produk terhadap total revenue? | Pareto analysis (80/20 rule). |
+| 6  | Bagaimana perbandingan volume penjualan dengan kontribusi revenue? | Mengidentifikasi produk high volume vs high revenue. |
+| 7  | Bagaimana tren revenue dan growth rate bulanan per produk? | Monitoring performa dan pertumbuhan produk. |
 
 ---
 
 ### 3. Supplier Analysis
-**Tujuan:** Memahami kontribusi supplier dan efektivitas sourcing.  
+**Tujuan:** Memahami kontribusi supplier, efektivitas sourcing, dan diversifikasi produk.
 
 | No | Business Question | Fokus Analisis |
 |----|-----------------|----------------|
-| 1  | Supplier mana yang memiliki penjualan terbesar? | Menentukan supplier strategis. |
-| 2  | Bagaimana kontribusi tiap produk terhadap total penjualan supplier? | Fokus produk unggulan supplier. |
-| 3  | Supplier mana yang memasok produk ke kota/kawasan penting? | Optimasi logistik & distribusi. |
+| 1  | Supplier mana yang memiliki penjualan terbesar? | Menentukan supplier strategis berdasarkan revenue. |
+| 2  | Bagaimana kontribusi tiap produk terhadap total penjualan supplier? | Mengidentifikasi produk unggulan tiap supplier. |
+| 3  | Supplier mana yang memasok produk ke kota/kawasan penting? | Optimasi distribusi dan strategi logistik. |
+| 4  | Supplier mana yang menyuplai produk terbanyak? | Mengukur diversifikasi produk dan kapasitas supply supplier. |
 
 ---
 
