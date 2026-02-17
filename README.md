@@ -59,25 +59,31 @@ Dashboard menjawab pertanyaan terkait:
 Detail lengkap tersedia di dalam folder case.
 
 
-### Case 02 — WikiUniversity / Northwind Trading Analysis  
+### Case 02 — WikiUniversity (Northwind Trading Analysis)
 `case-02-wikiuniversity/`
 
-Simulasi analisis perusahaan distribusi untuk mengevaluasi:
+Studi kasus analisis performa penjualan menggunakan dataset Northwind untuk mengevaluasi kinerja perusahaan distribusi makanan dan minuman.
 
-- Performa penjualan
-- Produk terlaris
-- Kontribusi customer
+#### Fokus Analisis
+- Customer analysis & Customer Lifetime Value (CLV)
+- Produk terlaris & kontribusi revenue
+- Analisis kategori (Pareto 80/20)
 - Kontribusi supplier
 - Distribusi geografis revenue
 
-Teknik yang digunakan:
+#### Techniques Used
 - Complex JOIN
-- CTE
-- Aggregation
+- Aggregation (SUM, COUNT, AVG)
+- CTE & Subquery
 - Ranking & filtering
 - Contribution percentage analysis
 
-Detail: `case-02-flight-ticket-booking/`
+#### Output
+- SQL queries terstruktur dan terdokumentasi
+- Insight bisnis & rekomendasi strategis
+- Interactive dashboard (Looker Studio)
+
+Detail lengkap tersedia di folder `case-02-wikiuniversity/`.
 
 
 ### Case 03 — Flight Ticket Booking Analysis  
@@ -147,7 +153,7 @@ Project ini menunjukkan kemampuan data extraction, transformation scripting, val
 
 ---
 
-## 📈 Project Objective
+## Project Objective
 
 Repository ini dibuat sebagai latihan sekaligus portfolio untuk menunjukkan kemampuan:
 
