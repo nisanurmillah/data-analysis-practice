@@ -25,7 +25,7 @@ Proyek ini mencakup eksplorasi dan analisis dataset Northwind dari berbagai aspe
 - Supplier Contribution  
 - Employee Performance  
 - Order & Revenue Analysis  
-- Data Maintenance Simulation  
+- Data Maintenance Simulation 
 
 ---
 
@@ -71,16 +71,19 @@ Proyek ini mencakup eksplorasi dan analisis dataset Northwind dari berbagai aspe
 ---
 
 ### 4. Category Analysis
-**Tujuan:** Memahami distribusi produk menurut kategori.  
+
+**Tujuan:** Memahami performa kategori produk dari sisi jumlah produk, minat customer, kontribusi revenue, dan tren waktu.
 
 | No | Business Question | Fokus Analisis |
-|----|-----------------|----------------|
-| 1  | Kategori mana yang memiliki jumlah produk terbanyak? | Inventory planning. |
-| 2  | Kategori mana yang paling diminati customer? | Fokus promosi kategori unggulan. |
+|----|------------------|----------------|
+| 1  | Kategori mana yang memiliki jumlah produk terbanyak? | Inventory planning & distribusi produk. |
+| 2  | Kategori mana yang paling diminati customer? | Identifikasi demand tertinggi & fokus promosi kategori unggulan. |
+| 3  | Kategori mana yang menghasilkan revenue terbesar? | Evaluasi kontribusi pendapatan & prioritas bisnis. |
+| 4  | Bagaimana tren revenue kategori dari waktu ke waktu? | Analisis pertumbuhan, seasonality, dan stabilitas performa kategori. |
 
 ---
 
-### 6. Data / Operational Maintenance
+### 5. Data / Operational Maintenance
 **Tujuan:** Menjaga data tetap valid dan siap analisis.  
 
 | No | Business Question | Fokus Analisis |
@@ -143,17 +146,51 @@ Case-01-Northwind/
 ├── README.md
 │
 ├── analysis/
-│ ├── methodology.md
-│ ├── customer_analysis.md
-│ ├── product_analysis.md
-│ └── supplier_analysis.md
+│   │
+│   ├── methodology.md
+│   │
+│   ├── customer_analysis/
+│   │   ├── README.md
+│   │   ├── query_postgresql/
+│   │   │   ├── customer_query.sql
+│   │   │   └── screenshot/
+│   │   │       └── customer_query_result.png
+│   │   └── dashboard_visualization/
+│   │       └── customer_dashboard.png
+│   │
+│   ├── product_analysis/
+│   │   ├── README.md
+│   │   ├── query_postgresql/
+│   │   │   ├── product_query.sql
+│   │   │   └── screenshot/
+│   │   │       └── product_query_result.png
+│   │   └── dashboard_visualization/
+│   │       └── product_dashboard.png
+│   │
+│   ├── category_analysis/
+│   │   ├── README.md
+│   │   ├── query_postgresql/
+│   │   │   ├── category_query.sql
+│   │   │   └── screenshot/
+│   │   │       └── category_query_result.png
+│   │   └── dashboard_visualization/
+│   │       └── category_dashboard.png
+│   │
+│   └── supplier_analysis/
+│       ├── README.md
+│       ├── query_postgresql/
+│       │   ├── supplier_query.sql
+│       │   └── screenshot/
+│       │       └── supplier_query_result.png
+│       └── dashboard_visualization/
+│           └── supplier_dashboard.png
 │
-├── queries/
-│ ├── 01_basic_select.sql
-│ ├── 02_join.sql
-│ ├── 03_aggregation.sql
-│ ├── 04_subquery_cte.sql
-│ └── 05_data_manipulation.sql
+└── queries/
+    ├── 01_basic_select.sql
+    ├── 02_join.sql
+    ├── 03_aggregation.sql
+    ├── 04_subquery_cte.sql
+    └── 05_data_manipulation.sql
 
 
 ---
