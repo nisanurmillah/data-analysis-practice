@@ -70,19 +70,7 @@ Proyek ini mencakup eksplorasi dan analisis dataset Northwind dari berbagai aspe
 
 ---
 
-### 4. Sales / Order Analysis
-**Tujuan:** Mengukur performa penjualan dan tren transaksi.  
-
-| No | Business Question | Fokus Analisis |
-|----|-----------------|----------------|
-| 1  | Total order per kategori atau produk | Mengukur demand per produk/kategori. |
-| 2  | Total penjualan per customer dan produk | Mengetahui kontribusi revenue. |
-| 3  | Persentase penjualan tiap produk dibanding total | Strategi marketing dan promosi. |
-| 4  | Potensi pendapatan jika produk dijual dengan markup tertentu | Forecasting & margin planning. |
-
----
-
-### 5. Category Analysis
+### 4. Category Analysis
 **Tujuan:** Memahami distribusi produk menurut kategori.  
 
 | No | Business Question | Fokus Analisis |
