@@ -95,7 +95,6 @@ Beberapa business question:
 
 Project ini menekankan pada revenue analysis dan customer behavior.
 
----
 
 ### Case 04 — ETL Rekening Koran BCA  
 `case-04-etl-rekening-koran-bca/`
