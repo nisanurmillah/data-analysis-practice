@@ -58,6 +58,7 @@ Dashboard menjawab pertanyaan terkait:
 
 Detail lengkap tersedia di dalam folder case.
 
+
 ### Case 02 — WikiUniversity / Northwind Trading Analysis  
 `case-02-wikiuniversity/`
 
@@ -77,6 +78,7 @@ Teknik yang digunakan:
 - Contribution percentage analysis
 
 Detail: `case-02-flight-ticket-booking/`
+
 
 ### Case 03 — Flight Ticket Booking Analysis  
 `case-03-flight-ticket-booking/`
