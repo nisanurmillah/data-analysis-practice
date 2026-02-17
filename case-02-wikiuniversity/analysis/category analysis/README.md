@@ -29,6 +29,11 @@ Dashboard ini memungkinkan pengguna untuk:
 
 # 1. Kategori dengan Jumlah Produk Terbanyak
 
+## Dashboard Overview
+
+![Dashboard Overview](dashboard_images/ss_01.png)
+
+
 **Hasil:**
 Kategori **Confections** memiliki jumlah produk terbanyak dengan total **13 produk**.
 
@@ -41,6 +46,11 @@ Kategori **Confections** memiliki jumlah produk terbanyak dengan total **13 prod
 
 # 2. Kategori Paling Diminati Customer
 
+## Dashboard Overview
+
+![Dashboard Overview](dashboard_images/ss_02.png)
+
+
 **Hasil:**
 Kategori **Dairy Products** menjadi kategori dengan jumlah penjualan tertinggi yaitu sebanyak **2.600 unit terjual**.
 
@@ -52,6 +62,11 @@ Kategori **Dairy Products** menjadi kategori dengan jumlah penjualan tertinggi y
 ---
 
 # 3. Kontribusi Revenue Terbesar
+
+## Dashboard Overview
+
+![Dashboard Overview](dashboard_images/ss_03.png)
+
 
 **Hasil:**
 Kategori **Beverages** memberikan kontribusi revenue terbesar terhadap total pendapatan perusahaan yaitu sebesar:
@@ -66,6 +81,11 @@ Kategori **Beverages** memberikan kontribusi revenue terbesar terhadap total pen
 ---
 
 # 4. Tren Pendapatan Bulanan per Kategori
+
+## Dashboard Overview
+
+![Dashboard Overview](dashboard_images/ss_04.png)
+
 
 ## Puncak Pendapatan Tertinggi per Kategori
 
