@@ -20,7 +20,7 @@ JOIN pemesanan p ON p.id_pemesanan=d.id_pemesanan
 JOIN pelanggan pl ON pl.id_pelanggan=p.id_pelanggan
 WHERE pl.nama='Maria Lestari';
 
---tampilkan pesanan, detail pemesanan, dan data pelanggan untuk penerbangan menggunakan pesawat singapore airline dan garuda indonesia
+--2. tampilkan pesanan, detail pemesanan, dan data pelanggan untuk penerbangan menggunakan pesawat singapore airline dan garuda indonesia
 SELECT l.id_pelanggan, 
       l.nama AS nama_pelanggan, 
       l.email, 
@@ -41,7 +41,7 @@ JOIN penerbangan p ON d.id_penerbangan=p.id_penerbangan
 JOIN pesawat s ON s.id_pesawat=p.id_pesawat
 WHERE s.nama_pesawat IN('Singapore Airlines 1', 'Garuda Indonesia 1');
 
---hitung total pendapatan rata-rata maskapai pesawat bulan juli
+--3. hitung total pendapatan rata-rata maskapai pesawat bulan juli
 SELECT p.id_pesawat, p.nama_pesawat, AVG(pm.total_harga) AS "pendapatan rata-rata bulan juni"
 FROM pesawat p
 JOIN penerbangan pn ON p.id_pesawat=pn.id_pesawat
@@ -52,7 +52,7 @@ WHERE EXTRACT(MONTH FROM pm.tanggal_pemesanan)=7
 GROUP BY p.id_pesawat, p.nama_pesawat
 ORDER by "pendapatan rata-rata bulan juni" DESC;
 
---tampilkan semua penerbangan dari Jakarta ke Surabaya 
+--4. tampilkan semua penerbangan dari Jakarta ke Surabaya 
 SELECT pn.id_penerbangan, 
         ba.nama_bandara AS nama_bandara_asal, 
         ka.nama_kota AS kota_asal, 
@@ -71,7 +71,7 @@ FROM penerbangan pn
          JOIN pesawat ps ON ps.id_pesawat=pn.id_pesawat
          WHERE kt.provinsi='Bali' AND ka.nama_kota='Jakarta';
 
---pelanggan yang melakukan lebih dari satu pemesanan
+--5. pelanggan yang melakukan lebih dari satu pemesanan
 SELECT pl.id_pelanggan, pl.nama, COUNT(pm.id_pemesanan) AS jumlah_pemesanan
 FROM pelanggan pl
 JOIN pemesanan pm ON pl.id_pelanggan=pm.id_pelanggan
@@ -84,10 +84,10 @@ JOIN pemesanan pm ON pl.id_pelanggan = pm.id_pelanggan
 GROUP BY pl.id_pelanggan, pl.nama
 ORDER BY jumlah_pemesanan DESC;
 
---berapa jumlah pelanggan yang melakukan pemesanan
+--6. berapa jumlah pelanggan yang melakukan pemesanan
 SELECT COUNT(id_pelanggan) AS jumlah_pelanggan_memesan FROM pemesanan;
 
---Rute paling populer (banyak penumpang)
+--7. Rute paling populer (banyak penumpang)
 SELECT 
     ka.nama_kota AS kota_asal,
     kt.nama_kota AS kota_tujuan,
@@ -101,7 +101,7 @@ JOIN kota kt ON bt.id_kota = kt.id_kota
 GROUP BY ka.nama_kota, kt.nama_kota
 ORDER BY total_penumpang DESC;
 
---Maskapai pesawat dengan revenue terbesar
+--8. Maskapai pesawat dengan revenue terbesar
 SELECT 
     ps.nama_pesawat,
     SUM(d.jumlah_penumpang * d.harga_per_kursi) AS total_revenue
@@ -111,7 +111,7 @@ JOIN pesawat ps ON pn.id_pesawat = ps.id_pesawat
 GROUP BY ps.nama_pesawat
 ORDER BY total_revenue DESC;
 
---Customer Top Spender
+--9. Customer Top Spender
 SELECT 
     pl.nama,
     SUM(pm.total_harga) AS total_belanja
@@ -120,7 +120,7 @@ JOIN pelanggan pl ON pm.id_pelanggan = pl.id_pelanggan
 GROUP BY pl.nama
 ORDER BY total_belanja DESC;
 
---Presentase repeat customer
+--10. Presentase repeat customer
 WITH customer_orders AS (
     SELECT id_pelanggan, COUNT(*) AS jumlah_order
     FROM pemesanan
@@ -131,7 +131,7 @@ SELECT
     AS persentase_repeat_customer
 FROM customer_orders;
 
---Tingkat keterisian kursi 
+--11. Tingkat keterisian kursi 
 SELECT 
     pn.id_penerbangan,
     ps.nama_pesawat,
@@ -146,7 +146,7 @@ JOIN pesawat ps ON pn.id_pesawat = ps.id_pesawat
 GROUP BY pn.id_penerbangan, ps.nama_pesawat, ps.kapasitas_penumpang
 ORDER BY load_factor_percent DESC;
 
---Tren penjualan per hari
+--12. Tren penjualan per hari
 SELECT 
     tanggal_pemesanan,
     SUM(total_harga) AS total_revenue
@@ -154,7 +154,7 @@ FROM pemesanan
 GROUP BY tanggal_pemesanan
 ORDER BY tanggal_pemesanan;
 
---Tren penjualan per bulan
+--13. Tren penjualan per bulan
 SELECT 
     DATE_TRUNC('month', tanggal_pemesanan) AS bulan,
     SUM(total_harga) AS total_revenue
@@ -162,7 +162,7 @@ FROM pemesanan
 GROUP BY bulan
 ORDER BY bulan;
 
---Tujuan paling menghasilkan user
+--14. Tujuan paling menghasilkan user
 SELECT 
     k.negara,
     SUM(d.jumlah_penumpang * d.harga_per_kursi) AS revenue
@@ -173,7 +173,7 @@ JOIN kota k ON b.id_kota = k.id_kota
 GROUP BY k.negara
 ORDER BY revenue DESC;
 
---Rata-rata harga tiket per rute
+--15. Rata-rata harga tiket per rute
 SELECT 
     ka.nama_kota AS asal,
     kt.nama_kota AS tujuan,
